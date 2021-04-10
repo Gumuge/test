@@ -17,10 +17,13 @@
     </div>
     <div>
       <!-- 이곳에 태그 추가 -->
-      <input type="text" value="안녕하세요" />
-      <button>변경</button>
+      <input id="in" type="text" value="안녕하세요" />
+      <button onclick="change()">변경</button>
     </div>
     <script>
+        function change(){
+            document.querySelector("label").innerHTML = document.querySelector("#in").value;
+        }
       // 요구사항
       // 1. div 안에서 text input과 button을 추가한다.
       // 2. input에 값을 입력하고 button을 클릭하면 입력한 값으로 label 내용을 바꾼다.
